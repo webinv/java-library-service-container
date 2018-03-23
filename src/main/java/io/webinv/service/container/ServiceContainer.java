@@ -55,6 +55,7 @@ public class ServiceContainer {
      * @param service
      * @param <T>
      * @return
+     * @throws ServiceNotFoundException
      */
     public <T> T get(Class<T> service) throws ServiceNotFoundException {
         if (!container.containsKey(service.getName())) {

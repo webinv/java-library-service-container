@@ -24,6 +24,9 @@ public class ServiceNotFoundException extends RuntimeException {
         super();
     }
 
+    /**
+     * @param message
+     */
     public ServiceNotFoundException (String message) {
         super(message);
     }

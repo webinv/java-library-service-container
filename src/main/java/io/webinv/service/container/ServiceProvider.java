@@ -20,7 +20,17 @@ package io.webinv.service.container;
  * @author Krzysztof Kardasz
  */
 public interface ServiceProvider<T> {
+    /**
+     * Class wich are provided
+     * @return
+     */
     Class<T> provides();
 
+    /**
+     * Initialize service
+     *
+     * @param container
+     * @return
+     */
     T provide(ServiceContainer container);
 }
